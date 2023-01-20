@@ -1,0 +1,1 @@
+Fields for the registration form of student
