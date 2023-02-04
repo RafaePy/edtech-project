@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login/Sign Up</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles/login.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cont">
+    <form onsubmit="register(this);return false" class="form sign-in" id="login-form">
+      <h2>Log In</h2>
+      <label>
+        <span>Email Address</span>
+        <input type="email" name="email" required><br>
+      </label>
+      <label>
+        <span>Password</span>
+        <input type="password" name="password" required><br>
+        <span class="error" id="login-err"></span>
+      </label>
+      <button class="submit" type="submit" name="submit" value="login">Log In</button>
+      <p class="forgot-pass">Forgot Password ?</p>
+
+      <div class="social-media">
+        <ul>
+          <li><img src="img/facebook.png"></li>
+          <li><img src="img/twitter.png"></li>
+          <li><img src="img/linkedin.png"></li>
+          <li><img src="img/instagram.png"></li>
+        </ul>
+      </div>
+    </form>
+
+    <div class="sub-cont">
+      <div class="img">
+        <div class="img-text m-up">
+          <h2>New to our Site?</h2>
+          <p>Welcome, To both Professors and students! Sign Up and become part of us!</p>
+        </div>
+        <div class="img-text m-in">
+          <h2>One of us?</h2>
+          <p>If you already has an account, Log In in. We've missed you!</p>
+        </div>
+        <div class="img-btn">
+          <span class="m-up">Sign Up</span>
+          <span class="m-in">Log In</span>
+        </div>
+      </div>
+      <form class="form sign-up" onsubmit="register(this);return false" id="signup-form">
+        <h2>Sign Up</h2>
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required pattern="[a-zA-Z ]{3,}">
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required pattern="[^\s]+@[^\s]+\.[^\s]+"><br>
+        <span class="error" id="signup-err"></span>
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" id="password" name="password" required onchange="match()" pattern=".{8,}">
+        </label>
+        <label>
+          <span>Confirm Password</span>
+          <input type="password" id="confirm" name="confirm" required oninput="match()">
+        </label>
+        <button type="submit" id="regButton" class="submit" name="submit" value="signup">Sign Up Now</button>
+      </form>
+    </div>
+  </div>
+<script type="text/javascript" src="script.js"></script>
+<script>
+    var regButton = document.getElementById('regButton')
+    var pass = document.getElementById('password')
+    var cpass = document.getElementById('confirm')
+    // If passwords don't match then disable submit button until they match
+    function match() {
+        if (pass.value != cpass.value) {
+            regButton.setAttribute('disabled', 'true')
+            cpass.style = "background-color: red;"
+        } else {
+            regButton.removeAttribute('disabled')
+            cpass.style = "background-color: green;"
+        }
+    }
+</script>
+
+<script>
+  function register(form) {
+      var data = new FormData(form)
+      // Create a query string to send using POST
+      var query = ""
+      for (var record of data.entries()) {
+          query += `${record[0]}=${record[1]}&`
+      }
+      var query = query + `form=${form.id}`
+
+      // AJAX
+      var xhttp = new XMLHttpRequest()
+      xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            var response = this.responseText.trim()
+            // Redirect to homepage on successful authentication
+            if (response == 'success') {
+              location.href = 'index.php'
+            } else {
+              // Display error message
+              if (form.id == 'login-form') {
+                document.getElementById('login-err').innerHTML = response
+              } else {
+                document.getElementById('signup-err').innerHTML = response
+              }
+            }
+            form.reset()
+          }
+      }
+      xhttp.open('POST', 'scripts/auth.php', true)
+      xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
+      xhttp.send(query)
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,704 @@
+body
+{
+    background-image: url('img/photo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.part1
+{
+    position: absolute;
+    top: 5%;
+    left: 8%;
+}
+.part1 img
+{
+    display: inline-block;
+    flex-direction: row;
+    padding: 1px;
+    align-items: right;
+}
+.part1 a
+{
+    display: inline-block;
+    padding: 66px;
+    align-items: right;
+    font-size: 19px;
+    align-items: center;
+}
+.part1 button
+{
+    padding: 20px;
+    width: 190px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    background: crimson;
+    border: 1px solid crimson;
+}
+.part1 a
+{
+    color: white;
+    text-decoration: none;
+    padding-right: 80px;
+    font-weight: 700;
+}
+.part1 a:hover
+{
+    color: crimson;
+}
+.toppart .part1
+{
+    position: relative;
+}
+.part2
+{
+    position: absolute;
+    top: 33%;
+    left: 18%;
+}
+#p1
+{
+    font-size: 73px;
+    font-weight: 100; 
+    color: white; 
+}
+#p2
+{
+    position: absolute;
+    top: 70%;
+    left: 8%;
+    font-size: 17px; 
+    color: white;
+    align-items: justify;
+    justify-content: center;
+}
+.text .part2
+{
+    position: absolute;
+}
+.bottompart
+{
+    position: absolute;
+    top: 90%;
+    left: 18%;
+}
+#t1
+{
+    width: 300px;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    padding-right: 50px;
+    border: 5px solid white;
+    color: crimson;
+}
+#e1
+{
+    width: 300px;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    padding-right: 50px;
+    border: 5px solid white;
+    color: crimson;    
+}
+.bottompart button
+{
+    padding: 20px;
+    width: 240px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    background: crimson;
+    border: 0px solid crimson;   
+}   
+.TOPPART 
+{
+    position: absolute;
+    top: 140%;
+    left: 18%;
+}
+.PART1 h1
+{
+    position: relative;
+    font-size: 42px;
+}
+.PART1 p
+{
+    position: relative;
+    font-size: 17px;
+    font-weight: 600;
+}
+.TOPPART .PART1
+{
+    position: relative;
+}
+.PART2
+{
+    position: absolute;
+    top: 193%;
+    left: 10%;
+}
+.box1
+{
+    position: absolute;
+    top: 85%;
+    left: 0%;
+}
+#p3
+{
+    background-color: lightgrey;
+    font-size: 19px;
+    border: none;
+    padding: 30px;
+}
+#p3:hover
+{
+    background-color: crimson;
+    color: aliceblue;
+}
+.PART3
+{
+    position: absolute;
+    top: 193%;
+    left: 38.8%;
+}
+.box2
+{
+    position: absolute;
+    top: 85%;
+    left: 0%;  
+}
+.PART4
+{
+    position: absolute;
+    top: 193%;
+    left: 67.5%;
+}
+.box3
+{
+    position: absolute;
+    top: 85%;
+    left: 0%;  
+}
+.PART5
+{
+    position: absolute;
+    top: 255%;
+    left: 10%;
+}
+.box4
+{
+    position: absolute;
+    top: 85%;
+    left: 0%;  
+}
+.PART6
+{
+    position: absolute;
+    top: 255%;
+    left: 38.8%;
+}
+.box5
+{
+    position: absolute;
+    top: 85%;
+    left: 0%;  
+}
+.PART7
+{
+    position: absolute;
+    top: 255%;
+    left: 67.5%;
+}
+.box6
+{
+    position: absolute;
+    top: 85%;
+    left: 0%;  
+}
+.PART2 .box1 .PART3 .box2 .PART4 .box3 .PART5 .box4 .PART6 .box5 .PART7 .box6
+{
+    position: fixed;
+}
+.course 
+{
+    position: absolute;
+    top: 323%;
+    left: 9%;
+}
+.course h2
+{
+    align-items: center;
+    font-size: 45px;
+    font-weight: 500;
+    border: 1px solid crimson;
+    padding-top: 75px;
+    padding-right: 450px;
+    padding-left: 450px;
+    padding-bottom: 250px;
+    background-color: crimson;
+}
+.BOX 
+{
+    position: absolute;
+    top: 45%;
+    left: 7%;
+    background-color: white;
+    padding: 45px;
+}
+#c1
+{
+    background-color: lightgray;
+    width: 300px;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    padding-right: 50px;
+    border: 5px solid lightgrey;
+    color: crimson;
+}
+#c2
+{
+    background-color: lightgray;
+    width: 300px;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    padding-right: 50px;
+    border: 5px solid lightgrey;
+    color: crimson;
+}
+.BOX button
+{
+    padding: 20px;
+    width: 230px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    background: crimson;
+    border: 0px solid crimson; 
+}
+.course .BOX #c1 #c2 button
+{
+    position: fixed;
+}
+.TEXT
+{
+    position: absolute;
+    top: 395%;
+    left: 10%;
+}
+.TEXT h2
+{
+    color: aliceblue;
+    font-size: 45px;
+    font-weight: 600;
+}
+.TEXT p
+{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 500;
+}
+.TEXT h2 p
+{
+    position: fixed;
+}
+.type
+{
+    position: absolute;
+    top: 430%;
+    left: 27%;
+}
+.type a
+{
+    position: relative;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 30px;
+}
+.type a:hover
+{
+    color: aliceblue;
+}
+.PART8
+{
+    position: absolute;
+    top: 450%;
+    left: 1%;
+}
+.box7
+{
+    position: absolute;
+    top: 85%;
+    left: 0%;  
+}
+.PART9
+{
+    position: absolute;
+    top: 450%;
+    left: 26%;
+}
+.box8
+{
+    position: absolute;
+    top: 85%;
+    left: 0%;  
+}
+.PART10
+{
+    position: absolute;
+    top: 450%;
+    left: 51%;
+}
+.box9
+{
+    position: absolute;
+    top: 85%;
+    left: 0%;  
+}
+.PART11
+{
+    position: absolute;
+    top: 450%;
+    left: 76%;
+}
+.box10
+{
+    position: absolute;
+    top: 85%;
+    left: 0%;  
+}
+.PART12
+{
+    position: absolute;
+    top: 505%;
+    left: 1%;
+}
+.box11
+{
+    position: absolute;
+    top: 85%;
+    left: 0%;  
+}
+.PART13
+{
+    position: absolute;
+    top: 505%;
+    left: 26%;
+}
+.box12
+{
+    position: absolute;
+    top: 85%;
+    left: 0%;  
+}
+.PART14
+{
+    position: absolute;
+    top: 505%;
+    left: 51%;
+}
+.box13
+{
+    position: absolute;
+    top: 85%;
+    left: 0%;  
+}
+.PART15
+{
+    position: absolute;
+    top: 505%;
+    left: 76%;
+}
+.box14
+{
+    position: absolute;
+    top: 85%;
+    left: 0%;  
+}
+#p4
+{
+    background-color: lightgrey;
+    font-size: 19px;
+    border: none;
+    padding: 30px;
+}
+.PART8 .box7 .PART9 .box8 .PART10 .box9 .PART11 .box10 .PART12 .box11 .PART13 .box12 .PART14 .box13 .PART15 .box14 #p4:hover
+{
+    position: relative;
+    color: aliceblue;
+}
+.community
+{
+    position: absolute;
+    top: 575%;
+    left: 15%;
+}
+.community h2
+{
+    font-size: 45px;
+    color: aliceblue;
+}
+.community p
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: aliceblue;
+}
+.community button
+{
+    padding: 20px;
+    width: 230px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    background: crimson;
+    border: 0px solid crimson; 
+}
+.community hr
+{
+    position: absolute;
+    top: 120%;
+    left: -50%;
+}
+.community h2 p button hr
+{
+    position: fixed;
+}
+.footer
+{
+    position: absolute;
+    top: 640%;
+    left: 5%;
+    display: flex;
+}
+.footer > div
+{
+    font-size: 22px;
+    font-weight: 700;
+    padding: 70px;
+    color: aliceblue;
+}
+.footer #p5 
+{
+    position: absolute;
+    top: 70%;
+    font-size: 16px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.footer #p6
+{
+    position: absolute;
+    top: 120%;
+    font-size: 18px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.footer #p7
+{
+    position: absolute;
+    top: 160%;
+    font-size: 18px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.footer #p8 
+{
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    font-size: 18px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.footer #p9
+{
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    font-size: 18px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.footer #p10
+{
+    position: absolute;
+    top: 120%;
+    left: 25%;
+    font-size: 18px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.footer #p11
+{
+    position: absolute;
+    top: 140%;
+    left: 25%;
+    font-size: 18px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.footer #p12
+{
+    position: absolute;
+    top: 160%;
+    left: 25%;
+    font-size: 18px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.footer #p13
+{
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    font-size: 18px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.footer #p14
+{
+    position: absolute;
+    top: 100%;
+    left: 45%;
+    font-size: 18px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.footer #p15
+{
+    position: absolute;
+    top: 120%;
+    left: 45%;
+    font-size: 18px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.footer #p16
+{
+    position: absolute;
+    top: 140%;
+    left: 45%;
+    font-size: 18px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.footer #p17
+{
+    position: absolute;
+    top: 160%;
+    left: 45%;
+    font-size: 18px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.footer #p18
+{
+    position: absolute;
+    top: 70%;
+    left: 66%;
+    font-size: 18px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.footer #p19
+{
+    position: absolute;
+    top: 100%;
+    left: 66%;
+    font-size: 18px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.footer #p20
+{
+    position: absolute;
+    top: 120%;
+    left: 66%;
+    font-size: 18px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.footer #p21
+{
+    position: absolute;
+    top: 140%;
+    left: 66%;
+    font-size: 18px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.footer #p22
+{
+    position: absolute;
+    top: 160%;
+    left: 66%;
+    font-size: 18px;
+    font-weight: 200;
+    color: aliceblue;
+}
+.news
+{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+}
+.news #e2
+{
+    background-color: lightgray;
+    width: 150px;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    padding-right: 50px;
+    border: 5px solid lightgrey;
+    color: crimson;
+}
+.news button
+{
+    padding: 18px;
+    width: 130px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    background: crimson;
+    border: 0px solid crimson; 
+}
+.news #e2 button
+{
+    position: fixed;
+}
+#last
+{
+    position: absolute;
+    top: 690%;
+    left: 0;
+    width: 100%;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: lightgray;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+}
+#last:hover
+{
+    color: crimson;
+    text-shadow: 10px;
+}
+#last p
+{
+    position: fixed;
+}
