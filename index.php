@@ -9,6 +9,10 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="icon" type="image/x-icon" href="img/logo.png.webp">
+
+    <meta name="description" content="Community for educators and students to come together for education purposes.">
+    <meta name="canonical" content="http://www.eduwebuni.neltify.app">
+    <!-- <meta name="robots" content="index,follow"> --> <!-- for web crawlers -->
     <title>WebUni</title>
 </head>
 <body style="background-image: url('img/photo.jpg');
@@ -23,7 +27,8 @@ session_start();
         <table>
             <tr>
                 <th>
-                <img src="img/logo.png.webp" alt="logo.png"></th>
+                <img src="img/logo.png.webp" alt="logo.png">
+                </th>
                 <th>
                 <a href="#default">Home</a></th>
                 <th>
@@ -213,8 +218,8 @@ session_start();
 <!--------------------------------------FOOTER--------------------------------------->
 <div class="footer">
     <div>Contact Info</div>
-    <p id="p5">1481 Creekside Lane
-        Avila Beach, CA 931</p>
+    <address id="p5">1481 Creekside Lane
+        Avila Beach, CA 931</address>
     <p id="p6">+1 23 456 7890</p>
     <p id="p7">mymail@gmail.com</p>
 
